@@ -1,5 +1,12 @@
 import { Route } from 'react-location'
+import { AutomaticBatching } from '../templates/AutomaticBatching/AutomaticBatching'
 import { Top } from '../templates/Top/Top'
+import { Promise as PromiseComponent } from '../templates/Promise/Promise'
+import { Suspense } from '../templates/Suspense/Suspense'
+import { NestedSuspense } from '../templates/NestedSuspense/NestedSuspense'
+import { Transition } from '../templates/Transition/Transition'
+import { UseDeferredValue } from '../templates/UseDeferredValue/UseDeferredValue'
+import { UseId } from '../templates/UseId/UseId'
 
 export const routes: Route[] = [
   {
@@ -8,30 +15,30 @@ export const routes: Route[] = [
   },
   {
     path: '/automaticBatching',
-    element: <div />,
+    element: <AutomaticBatching />,
   },
   {
     path: '/promise',
-    element: <div />,
+    element: <PromiseComponent />,
   },
   {
     path: '/suspense',
-    element: <div />,
+    element: <Suspense />,
   },
   {
     path: '/nestedSuspense',
-    element: <div />,
+    element: <NestedSuspense />,
   },
   {
     path: '/transition',
-    element: <div>startTransition/useTransition</div>,
+    element: <Transition />,
   },
   {
     path: '/useDeferredValue',
-    element: <div>useDeferredValue</div>,
+    element: <UseDeferredValue />,
   },
   {
     path: '/useId',
-    element: <div>useId</div>,
+    element: <UseId />,
   },
 ]
