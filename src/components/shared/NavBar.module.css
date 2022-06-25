@@ -1,0 +1,18 @@
+.navs {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  overflow-x: auto;
+  width: inhelit;
+  padding: 8px;
+}
+
+.link {
+  pointer: cursor;
+  color: white;
+  white-space: nowrap;
+}
+
+.link :hover {
+  border-bottom: 1px solid white;
+}

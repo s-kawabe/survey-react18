@@ -7,8 +7,24 @@ export const routes: Route[] = [
     element: <Top />,
   },
   {
-    path: '/useTransition',
-    element: <div>useTransition</div>,
+    path: '/automaticBatching',
+    element: <div />,
+  },
+  {
+    path: '/promise',
+    element: <div />,
+  },
+  {
+    path: '/suspense',
+    element: <div />,
+  },
+  {
+    path: '/nestedSuspense',
+    element: <div />,
+  },
+  {
+    path: '/transition',
+    element: <div>startTransition/useTransition</div>,
   },
   {
     path: '/useDeferredValue',
