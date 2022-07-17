@@ -16,6 +16,8 @@ const queryClient = new QueryClient({
 
 const App = () => {
   const location = new ReactLocation()
+  // mount→unmount→mount という流れでcomponentのライフサイクルが発生するため以下は２回表示される
+  // console.log('test')
   return (
     <QueryClientProvider client={queryClient}>
       <Router routes={routes} location={location}>

@@ -15,6 +15,11 @@ https://www.udemy.com/course/react18-suspense/learn/lecture/31907356#overview
 
 # Strict mode in React18
 
+# Concurent Rendering
+
+# SSR Streaming
+https://nextjs.org/docs/advanced-features/react-18/streaming
+
 # Automatic batching
 https://note.com/umotion/n/nadda0d47801c
 
@@ -41,6 +46,17 @@ const container = document.getElementById('app');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(<App tab="home" />);
 ```
+
+## flushSync
+`react-dom` のflushSync関数のコールバック内で発生するstate更新はbatchが効かなくなる。
+
+```ts
+flushSync(() => {
+  setUsers(res.data)
+})
+```
+
+
 
 # Promise
 

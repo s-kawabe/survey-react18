@@ -10,7 +10,7 @@ export const Layout = (props: { children: ReactNode }) => {
         <NavBar />
       </header>
       <main className={styles.content}>
-        <h1>React 18 Survey 🤔</h1>
+        <h1 className={styles.heading}>React 18 Survey 🤔</h1>
         {props.children}
       </main>
     </>
