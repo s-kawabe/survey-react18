@@ -1,7 +1,6 @@
 import { Route } from 'react-location'
 import { AutomaticBatching } from '../templates/AutomaticBatching/AutomaticBatching'
 import { Top } from '../templates/Top/Top'
-import { Promise as PromiseComponent } from '../templates/Promise/Promise'
 import { Suspense } from '../templates/Suspense/Suspense'
 import { NestedSuspense } from '../templates/NestedSuspense/NestedSuspense'
 import { Transition } from '../templates/Transition/Transition'
@@ -16,10 +15,6 @@ export const routes: Route[] = [
   {
     path: '/automaticBatching',
     element: <AutomaticBatching />,
-  },
-  {
-    path: '/promise',
-    element: <PromiseComponent />,
   },
   {
     path: '/suspense',

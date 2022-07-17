@@ -12,9 +12,6 @@ export const NavBar = () => {
           <Link to="/automaticBatching">Automatic Batching</Link>
         </li>
         <li className={styles.link}>
-          <Link to="/promise">Promise</Link>
-        </li>
-        <li className={styles.link}>
           <Link to="/suspense">Suspense</Link>
         </li>
         <li className={styles.link}>
