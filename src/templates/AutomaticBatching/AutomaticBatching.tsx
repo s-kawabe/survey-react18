@@ -34,6 +34,7 @@ export const AutomaticBatching = () => {
       <div className={styles.title}>AutomaticBatching</div>
       <div className={styles.count}>{fetchCount}</div>
       <button onClick={handleClick}>count</button>
+      <p style={{ fontSize: '12px' }}>please show console 👀</p>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { Route } from 'react-location'
 import { AutomaticBatching } from '../templates/AutomaticBatching/AutomaticBatching'
 import { Top } from '../templates/Top/Top'
-import { Suspense } from '../templates/Suspense/Suspense'
+import { SuspenseDemo } from '../templates/Suspense/Suspense'
 import { NestedSuspense } from '../templates/NestedSuspense/NestedSuspense'
 import { Transition } from '../templates/Transition/Transition'
 import { UseDeferredValue } from '../templates/UseDeferredValue/UseDeferredValue'
@@ -18,7 +18,7 @@ export const routes: Route[] = [
   },
   {
     path: '/suspense',
-    element: <Suspense />,
+    element: <SuspenseDemo />,
   },
   {
     path: '/nestedSuspense',

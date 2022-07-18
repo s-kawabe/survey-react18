@@ -1,18 +1,26 @@
 .navs {
   display: flex;
-  gap: 16px;
   list-style: none;
   overflow-x: auto;
   width: inhelit;
-  padding: 8px;
+  padding: 16px;
+  font-size: 20px;
 }
 
 .link {
   pointer: cursor;
   color: white;
   white-space: nowrap;
+  padding: 4px;
 }
 
-.link :hover {
-  border-bottom: 1px solid white;
+.link div {
+  padding: 8px 16px;
+  border-radius: 4px;
+  opacity: 4px;
+  transition: all 0.2s;
+}
+
+.link div:hover {
+  background-color: #464D5B;
 }

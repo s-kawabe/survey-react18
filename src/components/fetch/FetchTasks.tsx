@@ -5,7 +5,7 @@ export const FetchTasks = () => {
   const { data } = useQueryTasks()
   return (
     <div className={styles.container}>
-      <p className={styles.title}>Task List</p>
+      <p className={styles.title}>Task List 5s</p>
       {data.map((task: any) => (
         <p className={styles.item} key={task.id}>
           {task.title}

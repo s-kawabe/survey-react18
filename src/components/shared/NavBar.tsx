@@ -6,25 +6,39 @@ export const NavBar = () => {
     <nav>
       <ul className={styles.navs}>
         <li className={styles.link}>
-          <Link to="/">Top</Link>
+          <div>
+            <Link to="/">Top</Link>
+          </div>
         </li>
         <li className={styles.link}>
-          <Link to="/automaticBatching">Automatic Batching</Link>
+          <div>
+            <Link to="/automaticBatching">Automatic Batching</Link>
+          </div>
         </li>
         <li className={styles.link}>
-          <Link to="/suspense">Suspense</Link>
+          <div>
+            <Link to="/suspense">Suspense</Link>
+          </div>
         </li>
         <li className={styles.link}>
-          <Link to="/nestedSuspense">NestedSuspense</Link>
+          <div>
+            <Link to="/nestedSuspense">NestedSuspense</Link>
+          </div>
         </li>
         <li className={styles.link}>
-          <Link to="/transition">startTransition/useTransition</Link>
+          <div>
+            <Link to="/transition">startTransition/useTransition</Link>
+          </div>
         </li>
         <li className={styles.link}>
-          <Link to="/useDeferredValue">useDefferedValue</Link>
+          <div>
+            <Link to="/useDeferredValue">useDefferedValue</Link>
+          </div>
         </li>
         <li className={styles.link}>
-          <Link to="/useId">useId</Link>
+          <div>
+            <Link to="/useId">useId</Link>
+          </div>
         </li>
       </ul>
     </nav>
