@@ -9,7 +9,7 @@ const queryClient = new QueryClient({
     queries: {
       retry: false,
       refetchOnWindowFocus: false,
-      suspense: true,
+      suspense: true, // react-queryでSuspenseを有効にする (componentでerrorやloadingを見なくて良い)
     },
   },
 })

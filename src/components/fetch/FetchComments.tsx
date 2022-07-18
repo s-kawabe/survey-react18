@@ -1,3 +1,16 @@
+import { useQueryComments } from '../../hooks/useQueryComments@1s'
+import styles from './FetchItem.module.css'
+
 export const FetchComments = () => {
-  return <div>FetchComments</div>
+  const { data } = useQueryComments()
+  return (
+    <div className={styles.container}>
+      <p className={styles.title}>Comment List</p>
+      {data.map((comment: any) => (
+        <p className={styles.item} key={comment.id}>
+          {comment.name}
+        </p>
+      ))}
+    </div>
+  )
 }

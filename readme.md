@@ -17,6 +17,16 @@ https://www.udemy.com/course/react18-suspense/learn/lecture/31907356#overview
 
 # Concurent Rendering
 
+:::note info
+**Concurent Renderingによるライフサイクルの変化**
+Reac18からは「関数コンポーネントが呼び出されたら結果が画面に反映される」という保証が撤廃された。
+従来はレンダリングの処理が同期的になっていたため、関数コンポーネントが呼び出されたらそれが画面に反映されることは保証されていた。
+副作用についても「そのコンポーネントが画面に反映されるまでの一連の処理」となっていた。
+**コンポーネントがサスペンドする** 可能性がある関数コンポーネントのレンダリング結果が画面に反映されないケースがあり得る。
+:::
+
+
+
 # SSR Streaming
 https://nextjs.org/docs/advanced-features/react-18/streaming
 
@@ -55,10 +65,6 @@ flushSync(() => {
   setUsers(res.data)
 })
 ```
-
-
-
-# Promise
 
 # Suspense with react-query
 

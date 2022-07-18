@@ -1,3 +1,16 @@
+import { useQueryTasks } from '../../hooks/useQueryTasks@5s'
+import styles from './FetchItem.module.css'
+
 export const FetchTasks = () => {
-  return <div>FetchTasks</div>
+  const { data } = useQueryTasks()
+  return (
+    <div className={styles.container}>
+      <p className={styles.title}>Task List</p>
+      {data.map((task: any) => (
+        <p className={styles.item} key={task.id}>
+          {task.title}
+        </p>
+      ))}
+    </div>
+  )
 }
